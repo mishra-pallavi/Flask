@@ -1,0 +1,47 @@
+# create REST APIs with Flask-RESTX
+
+# steps
+
+# step1 : acivate virtual enviroment
+#   python3 -m venv env
+#   source env/bin/activate
+
+# step2 : install flask
+#   pip install flask
+
+# step3 : install restx 
+#   pip install flask-restx
+
+# step4 : install sqlalchemy
+#   pip install flask-sqlalchemy
+
+# step5 : run project
+#   flask run
+
+
+pip install python-dotenv
+
+
+
+flask shell
+    db.create_all()
+    exit()
+        sqlite3 --version 
+        # not installes then
+            sudo apt-get update
+            sudo apt-get install sqlite3
+
+    sqlite3 instance/db.sqlite3
+        .tables
+        .exit
+
+flask shell
+    from app.models import *
+    db.create_all()
+
+    db.session.add_all([Course(name="Math"), Course(name="Biology"), Course(name="History")])
+
+    db.session.add_all([Student(name="anthony",course_id=1), Student(name="Britney", course_id=1), Student(name="Charlie", course_id=2)])
+    db.session.commit()
+
+
