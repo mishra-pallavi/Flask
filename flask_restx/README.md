@@ -1,25 +1,23 @@
-create REST APIs with Flask-RESTX
+# create REST APIs with Flask-RESTX
 
-Steps
-
-step1 : acivate virtual enviroment
+### Step 1: Activate the virtual enviroment
 
    python3 -m venv env
    
    source env/bin/activate
    
-step2 : install flask
+### step 2 : install flask
 
    pip install flask
    
-step3 : install restx 
+### step 3 : install restx 
 
    pip install flask-restx
    
-step4 : install sqlalchemy
+### step 4 : install sqlalchemy
 
    pip install flask-sqlalchemy
    
-step5 : run project
+### step 5 : run project
 
    flask run
